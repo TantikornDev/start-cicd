@@ -38,13 +38,13 @@ deploy: # this can be any name you choose
       - heroku/deploy-via-git:
           force: true # force push when pushing to the heroku remote, see: https://devcenter.heroku.com/articles/git
 
-workflows:
-  test_my_app:
-    jobs:
-      - build_and_test
-      - deploy:
-          requires:
-            - build_and_test # only deploy if the build_and_test job has completed
-          filters:
-            branches:
-              only: main # only deploy when on main
+# workflows:
+#   start-cicd:
+#     jobs:
+#       - build_and_test
+#       - deploy:
+#           requires:
+#             - build_and_test # only deploy if the build_and_test job has completed
+#           filters:
+#             branches:
+#               only: main # only deploy when on main
