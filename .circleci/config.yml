@@ -9,6 +9,6 @@ jobs:
       - checkout
       - node/install-packages:
           pkg-manager: npm
-      - run: echo "Say hello to Mootam!"
+      - run:
           command: npm run start
           name: Start app
