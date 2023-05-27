@@ -10,5 +10,5 @@ jobs:
       - node/install-packages:
           pkg-manager: npm
       - run: echo "Say hello to Mootam!"
-          command: npm run build
-          name: Build app
+          command: npm run start
+          name: Start app
