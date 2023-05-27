@@ -6,9 +6,9 @@ jobs:
     # Primary container image where all steps run
      - image: ubuntu:22.04
     steps:
-      - checkout
-      - node/install-packages:
-          pkg-manager: npm
-      - run:
-          command: npm run start
-          name: Start app
+      # - checkout
+      # - node/install-packages:
+      #     pkg-manager: npm
+      - run: echo "Say hello to Mootam!"
+          # command: npm run start
+          # name: Start app
